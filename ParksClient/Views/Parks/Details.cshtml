@@ -1,0 +1,13 @@
+@{
+  Layout = "_Layout";
+}
+@model ParksClient.Models.Park
+
+<h4>@Model.Name</h4>
+
+<p> <em>State:</em> <b>@Model.State</b></p>
+<p><em>City: </em><b>@Model.City</b></p>
+<p><em>State: </em><b>@Model.State</b></p>
+<p><em>Zip Code: </em><b>@Model.ZipCode</b></p>
+<p><em>Type: </em><b>@Model.Type</b></p>
+@Html.ActionLink("Back", "Index", "Parks")

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "M2AZlseVEHsjhe460SFPaVjanD1qq1GPyrY2XhTllO/mi1UNH0QrCY3IuMu5n+5fTsGd0QdF+ShnrIVylNsLlg==",
+  "success": true,
+  "projectFilePath": "/Users/nicholasreeder/Desktop/epicodus/ParksClient.Solution/ParksClient/ParksClient.csproj",
+  "expectedPackageFiles": [
+    "/Users/nicholasreeder/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/nicholasreeder/.nuget/packages/restsharp/106.6.10/restsharp.106.6.10.nupkg.sha512"
+  ],
+  "logs": []
+}
