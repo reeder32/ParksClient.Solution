@@ -1,0 +1,27 @@
+@{
+  Layout = "_Layout";
+}
+
+@using ParksClient.Models;
+@model ParksClient.Models.Park;
+
+<h4>Add a new Park:</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+  @Html.LabelFor(model => model.State)
+  @Html.TextBoxFor(model => model.State)
+  @Html.LabelFor(model => model.City)
+  @Html.TextBoxFor(model => model.City)
+  @Html.LabelFor(model => model.ZipCode)
+  @Html.TextBoxFor(model => model.ZipCode)
+  @Html.LabelFor(model => model.Type)
+  @Html.TextBoxFor(model => model.Type)
+
+
+
+  <input type="submit" value="Add New Park" class="btn btn-default" />
+
+}

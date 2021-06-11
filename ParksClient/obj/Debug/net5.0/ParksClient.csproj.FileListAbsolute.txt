@@ -41,3 +41,4 @@
 /Users/nicholasreeder/Desktop/epicodus/ParksClient.Solution/ParksClient/obj/Debug/net5.0/ParksClient.csproj.CopyComplete
 /Users/nicholasreeder/Desktop/epicodus/ParksClient.Solution/ParksClient/obj/Debug/net5.0/ParksClient.genruntimeconfig.cache
 /Users/nicholasreeder/Desktop/epicodus/ParksClient.Solution/ParksClient/obj/Debug/net5.0/Razor/Views/Parks/Details.cshtml.g.cs
+/Users/nicholasreeder/Desktop/epicodus/ParksClient.Solution/ParksClient/obj/Debug/net5.0/Razor/Views/Parks/Create.cshtml.g.cs

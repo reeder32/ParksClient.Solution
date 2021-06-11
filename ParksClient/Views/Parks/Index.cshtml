@@ -10,10 +10,11 @@
   @foreach (Park p in Model)
   {
     <h4>@Html.ActionLink($"{@p.Name}", "Details", new {id = @p.ParkId}) </h4>
-    <p><em>State </em>@p.State</p>
-    <p><em>City </em>@p.City</p>
+
+    <p><em>State </em> @Html.ActionLink($"{@p.State}", "Index", new {state = @p.State})</p>
+    <p><em>City </em> @Html.ActionLink($"{@p.City}", "Index", new {city = @p.City})</p>
     <p><em>Zip Code </em>@p.ZipCode</p>
-    <p><em>Type: </em>@p.Type</p>
+    <p><em>Type: </em> @Html.ActionLink($"{@p.Type}", "Index", new {type = @p.Type})</p>
     <hr />
   }
 </ul>

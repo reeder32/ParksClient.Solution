@@ -50,7 +50,7 @@ namespace ParksClient
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Parks}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
