@@ -41,6 +41,9 @@ dotnet run
 
 #### Run on Browser
 
+**FYI**
+This is running on http://localhost:4000, and you need to have the api running on http://localhost:5000 for it to work. The api project can be found at https://github.com/reeder32/Parks.Solution.git
+
 ```sh
 cd PierresBakery
 dotnet run
