@@ -41,5 +41,9 @@ namespace ParksClient.Models
       Park park = JsonConvert.DeserializeObject<Park>(jsonResponse.ToString());
       return park;
     }
+     public static void Delete(int id)
+    {
+      var _ = ApiHelper.Delete(id);
+    }
   }
 }

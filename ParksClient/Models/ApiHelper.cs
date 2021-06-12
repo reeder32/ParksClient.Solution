@@ -36,7 +36,7 @@ namespace ParksClient.Models
       }
       var queryString = String.Join("", queryArray.ToArray()).Replace(" ", "&");
       RestClient client = new("http://localhost:5000/api");
-      RestRequest request = new RestRequest();
+      var request = new RestRequest();
       if (queryString != null)
       {
         request = new($"parks?{queryString}", Method.GET);
@@ -68,6 +68,13 @@ namespace ParksClient.Models
       var response = await client.ExecuteTaskAsync(request);
       Console.WriteLine($"Content: {response.Content}");
       return response.Content;
+    }
+      public static async Task Delete(int id)
+    {
+      RestClient client = new("http://localhost:5000/api");
+      RestRequest request = new($"parks/{id}", Method.DELETE);
+      request.AddHeader("Content-Type", "application/json");
+      var _ = await client.ExecuteTaskAsync(request);
     }
   }
 }

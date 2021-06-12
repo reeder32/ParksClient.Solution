@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 using ParksClient.Models;
 using System;
+using Newtonsoft.Json;
 namespace ParksClient.Controllers
 {
   public class ParksController : Controller
@@ -15,10 +17,8 @@ namespace ParksClient.Controllers
       var park = Park.GetWithId(id);
       return View(park);
     }
-    public IActionResult Create()
-    {
-      return View();
-    }
+    public IActionResult Create() => View();
+    
     [HttpPost]
     public IActionResult Create(Park park)
     {
@@ -26,6 +26,19 @@ namespace ParksClient.Controllers
       Park.Post(park);
       return RedirectToAction("Index");
     }
+     public async Task<ActionResult> Delete(int id)
+     {
+      var jsonPark = await ApiHelper.GetWithId(id);
+      var foundPark = JsonConvert.DeserializeObject<Park>(jsonPark);
+      return View(foundPark);
+    }
+    
+   [HttpPost, ActionName("Delete")]
+      public ActionResult DeleteConfirmed(int id)
+      {
+      Park.Delete(id);
+      return RedirectToAction("Index");
+      }
 
   }
 }

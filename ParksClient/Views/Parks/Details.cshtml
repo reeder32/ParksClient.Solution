@@ -11,3 +11,4 @@
 <p><em>Zip Code: </em><b>@Model.ZipCode</b></p>
 <p><em>Type: </em><b>@Model.Type</b></p>
 @Html.ActionLink("Back", "Index", "Parks")
+@Html.ActionLink("Delete", "Delete", new {id = @Model.ParkId})

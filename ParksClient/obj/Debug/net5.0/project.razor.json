@@ -15629,6 +15629,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/nicholasreeder/Desktop/epicodus/ParksClient.Solution/ParksClient/Views/Parks/Delete.cshtml",
+      "TargetPath": "Views\\Parks\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/nicholasreeder/Desktop/epicodus/ParksClient.Solution/ParksClient/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
