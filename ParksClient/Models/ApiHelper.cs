@@ -66,7 +66,7 @@ namespace ParksClient.Models
       request.AddHeader("Content-Type", "application/json");
       request.AddJsonBody(newPark);
       var response = await client.ExecuteTaskAsync(request);
-      Console.WriteLine($"Content: {response.Content}");
+      
       return response.Content;
     }
       public static async Task Delete(int id)

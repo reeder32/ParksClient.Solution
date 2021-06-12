@@ -22,7 +22,6 @@ namespace ParksClient.Controllers
     [HttpPost]
     public IActionResult Create(Park park)
     {
-      Console.WriteLine($"park: {park.Name}");
       Park.Post(park);
       return RedirectToAction("Index");
     }
